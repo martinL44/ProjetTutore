@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="présentation projet">
+	<title>
+		La Malvoyance
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<header  class="menu">
+		<h1>
+			L'INFORMATIQUE AU SERVICE DE LA MALVOYANCE
+		</h1>
+		<nav class="menu" id='navigation'>
+			<ul class="menu">
+				<li><a class="actif" href="index.html">Accueil</a></li>
+				<li><a href="malvoyance.html">La Malvoyance</a></li>
+				<li><a href="hardware.html">Hardware</a></li>
+				<li><a href="software.html">Software</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<main>
+		<section>
+			<h2>
+				La Malvoyance
+			</h2>
+			<article>
+				<a href="malvoyance.html#malvoyance">
+					<p>
+						Qu’est-ce que la malvoyance ?
+					</p> 
+					<img src="image\hide.png" alt="hide">
+				</a>
+				<a href="malvoyance.html#chiffre">
+					<p>
+						Combien de personnes sont concernées par la malvoyance ?
+					</p>
+				</a>
+				<a href="malvoyance.html#maladie">
+					<p>
+						Quelles sont les maladies responsables de la malvoyance ?
+					</p>
+				</a>
+				<a href="malvoyance.html#prévention">
+					<p>
+						Existe-t-il des moyens de prévention contre la malvoyance ?
+					</p>
+					<img src="image\social_care.png" alt="social-care">
+				</a>
+				<a href="malvoyance.html#traitements">
+					<p class="texte">
+						Existe-t-il des traitements ?
+					</p>
+					<img src="image\medical_kit.png" alt="medical-kit">
+				</a>
+				<a href="malvoyance.html#priseencharge">
+					<p>
+						Qui prend en charge les personnes atteintes de malvoyance ?
+					</p>
+					<img src="image\wash_your_hands.png" alt="wash-your-hands">
+				</a>
+				<a href="malvoyance.html#psychologique">
+					<p>
+						Comment se déroule la prise en charge psychologique pour les malvoyants ?
+					</p>
+					<img src="image\mental_health.png" alt="mental-health">
+				</a>
+			</article>
+		</section>
+		<section>
+			<h2>
+				Aide aux mal voyants
+			</h2>
+			<article>
+				<a href="hardware.html">
+					<p>
+						hardware
+					</p>
+					<img src="image\hardware.png" alt="hardware">
+				</a>
+				<a href="software.html">
+					<p>
+						software
+					</p>
+					<img src="image\software.png" alt="software">
+				</a>
+			</article>
+		</section>
+
+	</main>
+
+
+	<footer>
+		
+	</footer>
+
+	<script>
+	$(function(){
+	// On recupere la position du bloc par rapport au haut du site
+		var position_top_raccourci = $("#navigation").offset().top;
+
+		//Au scroll dans la fenetre on déclenche la fonction
+		$(window).scroll(function () {
+
+		//si on a defile de plus de 150px du haut vers le bas
+			if ($(this).scrollTop() > position_top_raccourci) {
+
+	//on ajoute la classe "fixNavigation" a <div id="navigation">
+				$('#navigation').addClass("fixNavigation"); 
+			} else {
+
+			//sinon on retire la classe "fixNavigation" a <div id="navigation">
+				$('#navigation').removeClass("fixNavigation");
+			}
+		});
+	});
+	</script>
+
+</body>
+</html>

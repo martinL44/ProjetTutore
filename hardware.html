@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="présentation projet">
+	<title>
+		Hardware
+	</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script
+		src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous">
+  </script>
+</head>
+<body>
+	<header  class="menu">
+		<h1>
+			L'INFORMATIQUE AU SERVICE DE LA MALVOYANCE
+		</h1>
+		<nav class="menu" id='navigation'>
+			<ul class="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="malvoyance.html">La Malvoyance</a></li>
+				<li><a class="actif" href="hardware.html">Hardware</a></li>
+				<li><a href="software.html">Software</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article class="grille">
+			<img class="imagehardware" src="image\hardware.png">
+			<h3 class="titre">Hardware</h3>	
+			<p class="a2all">
+				Pour aider les personnes atteintes de malvoyance ou de non voyance différent matériels existe.
+			C'est objets sont remplis d'informatique.
+			</p>
+		</article>
+
+
+		<article class="grille">
+			<h3 class="titre">
+				La plage Braille
+			</h3>
+			<img class="a269" src="image\plage_braille.png" alt="plage braille">
+			<p class="a216">
+				La plage braille est un outil destiné aux personnes pouvant lire le braille et qui souhaitent utiliser un ordinateur, sa forme ressemble à celle d’un petit clavier. Elle permet de retranscrire ce qui est affiché à l’écran en braille grâce à des picots. 
+			</p>
+		</article>
+
+
+		<article class="grille">
+			<h3 class="titre">
+				L'implant rétinien
+			</h3>
+			<img class="a269" src="image\implant_retinien.png" alt="implant rétinien">
+			<p class="a216">
+				Un implant rétinien, aussi connu sous le nom de rétine artificielle, est un dispositif qui permet de restaurer partiellement la vue.
+			</p>
+			<h4 class="a3all">
+				Comment cet implant fonctionne t il ?
+			</h4>
+			<p class="a4all">
+				Tout d’abord, le patient doit porter des lunettes auxquelles est intégré un appareil photo, c’est ce que l’utilisateur pourra voir. A l’aide d’une intervention chirurgicale, une puce sera implantée dans la rétine du patient. Ce qui est filmé est envoyé à la puce, qui transmet cette information au cerveau, ce qui permet au malvoyants de voir.
+				ce fonctionnement se base sur la stimulation de la rétine ce qui signifie qu’un individu dont le nerf optique ne fonctionne pas ne pourra pas bénéficier de ce dispositif
+
+			</p>
+		</article>
+
+
+		<article class="grille">
+			<h3 class="titre">
+				L'embosseuse
+			</h3>
+			<img class="a269" src="image\ambosseuse.png" alt="ambosseuse">
+			<p class="a216">
+				Une embosseuse est une imprimante, qui écrit en braille. C'est-à-dire qu’elle va imprimer en relief ce qui va permettre donc d’écrire en braille.
+			</p>
+		</article>
+	</main>
+	<footer>
+		
+	</footer>
+	<script>
+	$(function(){
+	// On recupere la position du bloc par rapport au haut du site
+		var position_top_raccourci = $("#navigation").offset().top;
+
+		//Au scroll dans la fenetre on déclenche la fonction
+		$(window).scroll(function () {
+
+		//si on a defile de plus de 150px du haut vers le bas
+			if ($(this).scrollTop() > position_top_raccourci) {
+
+	//on ajoute la classe "fixNavigation" a <div id="navigation">
+				$('#navigation').addClass("fixNavigation"); 
+			} else {
+
+			//sinon on retire la classe "fixNavigation" a <div id="navigation">
+				$('#navigation').removeClass("fixNavigation");
+			}
+		});
+	});
+	</script>
+</body>
+</html>
