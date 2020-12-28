@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="présentation projet">
+	<title>
+		Hardware
+	</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script
+		src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous">
+  </script>
+</head>
+<body>
+	<header  class="menu">
+		<h1>
+			L'INFORMATIQUE AU SERVICE DE LA MALVOYANCE
+		</h1>
+		<nav class="menu" id='navigation'>
+			<ul class="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="malvoyance.html">La Malvoyance</a></li>
+				<li><a class="actif" href="hardware.html">Hardware</a></li>
+				<li><a href="software.html">Software</a></li>
+				<li><a href="sources.html">Sources</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	
+	</main>
+	<footer>
+		
+	</footer>
+	<script>
+	$(function(){
+	// On recupere la position du bloc par rapport au haut du site
+		var position_top_raccourci = $("#navigation").offset().top;
+
+		//Au scroll dans la fenetre on déclenche la fonction
+		$(window).scroll(function () {
+
+		//si on a defile de plus de 150px du haut vers le bas
+			if ($(this).scrollTop() > position_top_raccourci) {
+
+	//on ajoute la classe "fixNavigation" a <div id="navigation">
+				$('#navigation').addClass("fixNavigation"); 
+			} else {
+
+			//sinon on retire la classe "fixNavigation" a <div id="navigation">
+				$('#navigation').removeClass("fixNavigation");
+			}
+		});
+	});
+	</script>
+</body>
+</html>

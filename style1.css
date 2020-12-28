@@ -222,6 +222,22 @@ p{
 	max-width: 100%;
 	max-height: auto;
 }
+table{
+	margin: auto;
+	border-collapse: collapse;
+	width: 100%;
+}
+/* Toutes les cellules des tableaux... */
+td, th {
+    border: 1px solid black; /* auront une bordure de 1px */
+    text-align: center;
+    padding: 5px;
+    
+}
+caption{
+	caption-side: bottom;
+}
+
 
  /*  FOOTER  */
 
