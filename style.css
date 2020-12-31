@@ -117,5 +117,20 @@ img{
 footer{
 	background-color: #000;
 	width: 100%;
-	height: 100px;
+	height: 200px;
+}
+#valid_html{
+	margin: 10px;
+	width:88px;
+	height:31px;
+}
+#valid_css{
+	margin: 10px;
+	width:88px;
+	height:31px;
+}
+#logo_IUT{
+	margin: 10px;
+	width:112px;
+	height: 35px;
 }
