@@ -20,9 +20,6 @@ h1{
 
 
 /* MENU */
-nav{
-	border-top: 1px solid #fff;
-}
 nav ul {
 	padding: 0;
 	text-align: center;
@@ -31,30 +28,28 @@ nav ul {
 }
 nav ul li {
 	display: inline-block;
-	
 	padding-top: 30px;
 	padding-bottom: 30px; 
 	font-size: 30px;
-	
 }
-nav a{
-	padding: 30px;
+.navigation{
+ background: #000;
+ border-top: 1px solid #fff;
+ }
+ .lien_menu{
+ 	padding: 30px;
 	color: #fff;
 	text-decoration: none;
-}
-nav a:hover {
+ }
+ .lien_menu:hover {
 	cursor: pointer;
 	background-color: grey;
 }
-#navigation{
- background: #000;
- }
  .fixNavigation{
  	border-top: none;
  	z-index: 9999;
 	position: fixed;
  	top: 0;
- 	/* Mise en forme */
  	width: 100%; /* <-- Largeur de votre site */
  }
 
@@ -115,22 +110,35 @@ img{
 /*  FOOTER  */
 
 footer{
+	margin: auto;
 	background-color: #000;
-	width: 100%;
-	height: 200px;
+	display: flex;
+	padding: 40px;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
-#valid_html{
-	margin: 10px;
-	width:88px;
-	height:31px;
+
+
+.validator{
+	display: flex;
+	flex-direction: column;
 }
-#valid_css{
-	margin: 10px;
-	width:88px;
-	height:31px;
+h5{
+	color: white;
+	font-size: 20px;
 }
 #logo_IUT{
-	margin: 10px;
-	width:112px;
-	height: 35px;
+	width: 200px;
+	height: 60px;
+}
+.realisateur{
+	color: white;
+}
+#valid_html{
+	width:120px;
+	height:50px;
+}
+#valid_css{
+	width:120px;
+	height:50px;
 }
