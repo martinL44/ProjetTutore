@@ -2,8 +2,7 @@ html,body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	/*background-color: #F5F5F5;*/
-	background-color: #fff;
+	background-color: #F5F5F5;
 }
 header{
 	background-color: #000;
@@ -37,28 +36,37 @@ nav ul li {
  background: #000;
  border-top: 1px solid #fff;
  }
- .lien_menu{
+.lien_menu{
  	padding: 30px;
 	color: #fff;
 	text-decoration: none;
  }
- .lien_menu:hover {
+.lien_menu:hover {
 	cursor: pointer;
 	background-color: grey;
 }
- .fixNavigation{
+.fixNavigation{
  	border-top: none;
  	z-index: 9999;
 	position: fixed;
  	top: 0;
  	width: 100%; /* <-- Largeur de votre site */
  }
-
+.fixe_main{
+ 	margin-top: 170PX;
+ }
+#actif{
+ 	background-color: #333;
+ }
+#actif:hover{
+ 	cursor: pointer;
+	background-color: grey;
+ }
 
  /*  MAIN  */
 main{
 	width: 65%;
-	margin: 100px auto;
+	margin:auto;
 	padding: 50px;
 	background-color: #F5F5F5;
 }
@@ -67,6 +75,12 @@ article{
 }
 h3{
 	font-size: 40px;
+}
+h4{
+	font-size: 30px;
+}
+h5{
+	color: #000;
 }
 p{
 	font-size: 25px;
@@ -231,7 +245,7 @@ td, th {
     
 }
 caption{
-	caption-side: bottom;
+	caption-side: top;
 }
 
 

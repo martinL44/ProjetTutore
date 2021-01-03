@@ -20,18 +20,17 @@
 		</h1>
 		<nav class="navigation">
 			<ul>
-				<li><a class="lien_menu" href="index.html">Accueil</a></li>
+				<li><a class="lien_menu" id="actif" href="index.html">Accueil</a></li>
 				<li><a class="lien_menu" href="malvoyance.html">La Malvoyance</a></li>
-				<li><a class="lien_menu" href="hardware.html">Hardware</a></li>
-				<li><a class="lien_menu" class="actif" href="software.html">Software</a></li>
+				<li><a class="lien_menu" href="hardware.html">Aide aux mal voyants</a></li>
 				<li><a class="lien_menu" href="sources.html">Sources</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<article class="grille">
-			<img class="imagehardware" src="image/hardware.png">
-			<h3 class="titre">Hardware</h3>	
+			<img class="imagehardware" src="image/software.png">
+			<h3 class="titre">Software</h3>	
 			<p class="a2all">
 				Pour venir en aide aux malvoyants, plusieurs applications sont mises à leur disposition.
 				Les 2 principales applications sont SUPERNOVA et ZoomText.
@@ -45,7 +44,7 @@
 				Aussi le malvoyant peut paramétrer ces applications selon sa malvoyance dans les moindres détails. Il peut par exemple configurer la couleur d’affichage de son écran ou encore la couleur du curseur.
 			</p>
 			<p class="a5all">
-				Mais il y a également d’autres applications plus petites comme : Dragon Naturally Speaking, Jaw, Tadeo, Koba Vocatex Plus, etc ...
+				Mais il y a également d’autres applications plus petites comme : Dragon Naturally Speaking, Jaw, Tadeo, Koba Vocatex-Plus, etc ... .
 				Elles prennent seulement en charge des fonctionnalités très précises comme le zoom d’un texte.
 			</p>
 		</article>
@@ -149,7 +148,7 @@
 	<script>
 	$(function(){
 	// On recupere la position du bloc par rapport au haut du site
-		var position_top_raccourci = $("#navigation").offset().top;
+		var position_top_raccourci = $(".navigation").offset().top;
 
 		//Au scroll dans la fenetre on déclenche la fonction
 		$(window).scroll(function () {
@@ -158,11 +157,13 @@
 			if ($(this).scrollTop() > position_top_raccourci) {
 
 	//on ajoute la classe "fixNavigation" a <div id="navigation">
-				$('#navigation').addClass("fixNavigation"); 
+				$('.navigation').addClass("fixNavigation");
+				$('main').addClass("fixe_main");
 			} else {
 
 			//sinon on retire la classe "fixNavigation" a <div id="navigation">
-				$('#navigation').removeClass("fixNavigation");
+				$('.navigation').removeClass("fixNavigation");
+				$('main').removeClass("fixe_main");
 			}
 		});
 	});

@@ -36,21 +36,31 @@ nav ul li {
  background: #000;
  border-top: 1px solid #fff;
  }
- .lien_menu{
+.lien_menu{
  	padding: 30px;
 	color: #fff;
 	text-decoration: none;
  }
- .lien_menu:hover {
+.lien_menu:hover {
 	cursor: pointer;
 	background-color: grey;
 }
- .fixNavigation{
+.fixNavigation{
  	border-top: none;
  	z-index: 9999;
 	position: fixed;
  	top: 0;
  	width: 100%; /* <-- Largeur de votre site */
+ }
+.fixe_main{
+ 	margin-top: 100PX;
+ }
+#actif{
+ 	background-color: #333;
+ }
+#actif:hover{
+ 	cursor: pointer;
+	background-color: grey;
  }
 
 

@@ -11,7 +11,7 @@
 		src="https://code.jquery.com/jquery-3.5.1.js"
 		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous">
-  </script>
+  	</script>
 </head>
 <body>
 	<header  class="menu">
@@ -20,29 +20,31 @@
 		</h1>
 		<nav class="navigation">
 			<ul>
-				<li><a class="lien_menu" href="index.html">Accueil</a></li>
-				<li><a class="lien_menu" class="actif" href="malvoyance.html">La Malvoyance</a></li>
-				<li><a class="lien_menu" href="hardware.html">Hardware</a></li>
-				<li><a class="lien_menu" href="software.html">Software</a></li>
+				<li><a class="lien_menu" id="actif" href="index.html">Accueil</a></li>
+				<li><a class="lien_menu" href="malvoyance.html">La Malvoyance</a></li>
+				<li><a class="lien_menu" href="aides_pour_les_malvoyants.html">Aide aux mal voyants</a></li>
 				<li><a class="lien_menu" href="sources.html">Sources</a></li>
 			</ul>
 		</nav>
 	</header>
+
+
+
 	<main>
-		<article class="grille">
+		<article class="grille" id="malvoyance">
 			<img class="logo" src="image/hide.png" alt="hide">
 			<h3 class="titrelogo">
 				Que-ce que la malvoyance ?
 			</h3>
 			<p class="a2all">
-				La malvoyance est une déficience visuel. Les personnes atteintes de malvoyance non pas perdu totalement la vue.
+				La malvoyance est une déficience visuelle. Les personnes atteintes de malvoyance n'ont pas perdu totalement la vue.
 			<p class="a3all">
-				Les déficiences visuelles peuvent être de différents niveaux : la malvoyance concerne les déficiences visuelles modérées ou graves qui diffèrent de la cécité clinique qui est une perte totale de la vision.
+				Les déficiences visuelles peuvent être de différents niveaux : la malvoyance concerne les déficiences visuelles modérées ou graves. Elles se distingue de la cécité clinique qui est une perte totale de la vision.
 			</p>
 		</article>
 
-		<article class="grille">
-			<img class="logo" src="image/hide.png" alt="hide">
+		<article class="grille" id="maladie">
+			<img class="logo" src="image/eye_disease.png" alt="hide">
 			<h3 class="titrelogo">
 				Quelles sont les maladies responsables de la malvoyance ?
 			</h3>
@@ -55,18 +57,18 @@
 			</p>
 			<img class="maculaire" src="image/DMLA.jpg" alt="DMLA">
 			<p class="quatre">
-				Elle prive le patient du centre de son champ de vision perturbant ainsi fortement son quotidien : lire, écrire, conduire... . Pour la forme la plus courante, la forme "sèche", l'apparition des symptômes signifie que la maladie est déjà bien installée..., d'où l'importance d'un contrôle médical régulier chez un ophtalmologiste.
+				Elle prive le patient du centre de son champ de vision perturbant ainsi fortement son quotidien : lire, écrire, conduire... . Pour la forme la plus courante, appelée la forme "sèche", l'apparition des symptômes signifie que la maladie est déjà bien installée..., d'où l'importance d'un contrôle médical régulier chez un ophtalmologiste.
 			</p>
 			<p class="cinq">
-				Le glaucome qui, non traité, peut aboutir à la cécité. Cette pathologie est insidieuse car les symptômes peuvent apparaître après 20 ans de maladie non dépistée et non prise en charge. Le champ visuel se réduit dû à une atteinte du nerf optique suite à une augmentation de la pression du globe oculaire. C'est à partir de l'âge de 40 ans que vous devez faire contrôler la pression de vos yeux chez un ophtalmologiste.
+				Le glaucome qui, non traité, peut aboutir à la cécité. Cette pathologie est insidieuse car les symptômes peuvent apparaître après 20 ans de maladie non dépistée et non prise en charge. Le champ visuel se réduit du faite d'une atteinte du nerf optique suite à une augmentation de la pression du globe oculaire. C'est à partir de l'âge de 40 ans que l'on doit faire contrôler la pression de nos yeux chez un ophtalmologiste.
 			</p>
 			<img class="glaucome" src="image/glaucome.png" alt="glaucome">
 			<p class="six">
-				La rétinopathie diabétique est aujourd’hui mieux prévenue grâce au dépistage mais elle constitue une cause de déficience visuelle, le champ de vision s'altère. Le diabète est l'unique responsable. Une perspective inquiétante réside dans le fait qu'en 2020, 20% de la population française serait obèse, l'obésité est un des facteurs de risque de développement du diabète.
+				La rétinopathie diabétique est aujourd’hui mieux prévenue grâce au dépistage. Elle constitue une cause de déficience visuelle, le champ de vision s'altère. Le diabète est l'unique responsable. Une perspective inquiétante réside dans le fait qu'en 2020, 20% de la population française serait obèse. L'obésité est un des facteurs de risque de développement du diabète.
 			</p>
 			<img class="retinopathie" src="image/retinopathie_diab.jpg" alt="retinopathie">
 			<p class="sept">
-				La myopie forte et ses conséquences telles que le décollement de rétine ou la maculopathie, peuvent conduire à un état de malvoyance.
+				La myopie forte et ses conséquences telles que le décollement de rétine ou la maculopathie, peuvent conduire à des états de malvoyance.
 			</p>
 			<p class="huit">
 				La rétinite pigmentaire, les maladies dégénératives, les traumatismes oculaires et les cérébro-lésions sont aussi responsables d’état de malvoyance.
@@ -76,8 +78,8 @@
 			<img class="maculaire" src="DMLA.jpg" alt="DMLA">
 		</article>
 
-		<article class="grille">
-			<img class="logo" src="image/hide.png" alt="hide">
+		<article class="grille" id="chiffre">
+			<img class="logo" src="image/how_much.png" alt="hide">
 			<h3 class="titrelogo">
 				Combien de personnes sont concernées par la malvoyance ?
 			</h3>
@@ -85,7 +87,7 @@
 				En France, l'INSEE estime à 3,1 millions le nombre de déficients visuels, de tout âge.
 			</p>
 			<p class="a3all">
-				La déficience visuelle touche plus particulièrement les personnes de plus de 50 ans : DMLA, glaucome, rétinopathie diabétique, …
+				Elle touche plus particulièrement les personnes de plus de 50 ans : DMLA, glaucome, rétinopathie diabétique, …
 			</p>
 			<p class="a4all">
 				Les maladies d'origine génétique telle que la rétinite pigmentaire concernerait 35.000 personnes en France.
@@ -110,7 +112,7 @@
 
 
 
-		<article class="grille">
+		<article class="grille" id="prévention">
 			<img class="logo" src="image/social_care.png" alt="hide">
 			<h3 class="titrelogo">
 				Existe-il des moyens de prévention contre la malvoyance ?
@@ -119,7 +121,7 @@
 				Certaines pathologies peuvent être prévenues par un dépistage précoce, ceci est essentiel pour limiter les complications et préserver au maximum la vision du patient. Faites contrôler la santé de vos yeux tous les 2 ans minimum.
 			</p>
 			<p class="a3all">
-				Ensuite, les bonnes pratiques résident dans la protection des organes qui constituent l'œil, ainsi il est important de protéger ses yeux des effets nocifs du soleil comme les UV et ce dès le plus jeune âge.
+				Ensuite, les bonnes pratiques résident dans la protection des organes constitutifs de l'œil. Ainsi il est important de protéger ses yeux des effets nocifs du soleil comme les UV et ce dès le plus jeune âge.
 			</p>
 			<p class="a4all">
 				Certains facteurs de risque comme le tabac peuvent être évités.
@@ -135,13 +137,13 @@
 
 
 
-		<article class="grille">
+		<article class="grille" id="traitements">
 			<img class="logo" src="image/medical_kit.png" alt="medical-kit">
 			<h3 class="titrelogo">
 				Existe-t-il des traitements ?
 			</h3>
 			<p class="a2all">
-				Il y a eu de gros progrès dans le traitement des pathologies cécitantes : les innovations médicamenteuses, chirurgicales et de réadaptation sont continuelles.
+				De gros progrès sont apparus dans le traitement des pathologies cécitantes : les innovations médicamenteuses, chirurgicales et de réadaptation sont continuelles.
 			</p>
 			<p class="a3all">
 				Aujourd'hui, les traitements permettent pour la plupart de limiter l'évolution de la maladie, mais pas le recouvrement de l'altération de vision, d'où l'importance des dépistages et des prises en charge précoces.
@@ -153,13 +155,13 @@
 				De quoi s'agit-il ? 
 			</p>
 			<p class="a6all">
-				Pour les médicaments ou les collyres, les principes actifs arrivent dans l’œil par transmission par le sang, or l'intérieur de l’œil n’est pas vascularisé, le plus efficace est donc d'introduire le produit directement dans l’œil, par une piqûre (IVT). C’est un mode d’injection qui peut impressionner mais qui est très prometteur.
+				Pour les médicaments ou les collyres, les principes actifs atteignent l’œil par transmission dans le sang. Cependant l'intérieur de l’œil n’est pas vascularisé. Le plus efficace est donc d'introduire le produit directement dans l’œil, par une piqûre (IVT). C’est un mode d’injection qui peut impressionner mais qui est très prometteur.
 			</p>
 		</article>
 
 
 
-		<article class="grille">
+		<article class="grille" id="prise_en_charge">
 			<img class="logo" src="image/wash_your_hands.png" alt="wash-your-hand">
 			<h3 class="titrelogo">
 				Qui prend en charge les personnes atteintes de malvoyance ?
@@ -171,19 +173,19 @@
 				Le parcours de soins est initié par l’ophtalmologiste qui oriente ensuite le patient vers l'orthoptiste, l'opticien, l’ergothérapeute, le psychologue, qui ont tous un rôle essentiel.
 			</p>
 			<p class="a4all">
-				Les centres pluridisciplinaires bénéficient en plus du service de psychomotriciens et d'instructeurs en locomotion.
+				Les centres pluridisciplinaires composés des disciplines évoquées précedemment bénéficient en plus des services de psychomotriciens et d'instructeurs en locomotion.
 			</p>
 			<p class="a5all">
 				La rééducation et la réadaptation fonctionnelle représentent des aides précieuses pour les patients. Cette réadaptation est assurée par un orthoptiste. Par des exercices visuels quotidiens, le patient apprend à exploiter différemment son champ de vision.
 			</p>
 			<p class="a6all">
-				Les aides visuelles : loupes, télé-agrandisseurs... sont spécifiques à chacun et à l'activité pratiquée, elles nécessitent un accompagnement particulier par l'orthoptiste et l'opticien spécialisé en basse vision.
+				Les aides visuelles : loupes, télé-agrandisseurs... sont spécifiques à chacun et à l'activité pratiquée. Elles nécessitent un accompagnement particulier par l'orthoptiste et l'opticien spécialisé en basse vision.
 			</p>
 		</article>
 
 
 
-		<article class="grille">
+		<article class="grille" id="psychologique">
 			<img class="logo" src="image/mental_health.png" alt="mental-health">
 			<h3 class="titrelogo">
 				Comment se déroule la prise en charge psychologique pour les malvoyants ?
@@ -237,7 +239,7 @@
 	<script>
 	$(function(){
 	// On recupere la position du bloc par rapport au haut du site
-		var position_top_raccourci = $("#navigation").offset().top;
+		var position_top_raccourci = $(".navigation").offset().top;
 
 		//Au scroll dans la fenetre on déclenche la fonction
 		$(window).scroll(function () {
@@ -246,11 +248,13 @@
 			if ($(this).scrollTop() > position_top_raccourci) {
 
 	//on ajoute la classe "fixNavigation" a <div id="navigation">
-				$('#navigation').addClass("fixNavigation"); 
+				$('article').addClass("fixe_main");
+				$('.navigation').addClass("fixNavigation");
 			} else {
 
 			//sinon on retire la classe "fixNavigation" a <div id="navigation">
-				$('#navigation').removeClass("fixNavigation");
+				$('article').removeClass("fixe_main");
+				$('.navigation').removeClass("fixNavigation");
 			}
 		});
 	});
